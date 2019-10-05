@@ -87,6 +87,26 @@ header .plintus::after {
   height: 500px;
 }
 
+.my-room .zakaz {
+  font-family: 'Exo 2', sans-serif;
+  color: #FFFAE3;
+  background: #5D576B;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  border: transparent;
+  position: absolute;
+  top: 20%;
+  left: 47%;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  border-radius: 5px;
+}
+
+.my-room .zakaz:hover {
+  background: #F7567C;
+}
+
 .my-room .table {
   position: absolute;
   background-image: url("../img/comp.png");
@@ -120,6 +140,7 @@ header .plintus::after {
   border: 10px solid #5D576B;
   z-index: 5;
   overflow: hidden;
+  left: 8%;
 }
 
 .my-room .window .sun {
@@ -139,4 +160,10 @@ header .plintus::after {
   position: absolute;
   left: -10%;
   top: 0;
+}
+
+.content {
+  min-height: 200px;
+  width: 100%;
+  background-image: url("../img/bgcont.png");
 }
