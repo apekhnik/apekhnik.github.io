@@ -1,4 +1,142 @@
-*{
-	padding: 0;
-	margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper60 {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.bk {
+  display: block !important;
+  text-align: center;
+}
+header {
+  background: #99E1D9;
+  width: 100%;
+  position: relative;
+}
+
+header .plintus {
+  background-image: url("../img/plata.png");
+  background-size: contain;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+header .plintus::after {
+  content: '';
+  background-image: url("../img/wawe.png");
+  width: 100%;
+  height: 20px;
+  z-index: 59;
+  position: absolute;
+  bottom: -3px;
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header-top .logo {
+  font-family: 'Exo 2', sans-serif;
+  color: #FFFAE3;
+}
+
+.header-top .logo p {
+  display: inline-block;
+}
+
+.header-top .logo span {
+  font-size: 13px;
+  display: block;
+}
+
+.header-top .menu {
+  font-family: 'Exo 2', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-top .menu div {
+  margin-right: 20px;
+  color: #FFFAE3;
+}
+
+.header-top .menu div a {
+  color: #FFFAE3;
+}
+
+.my-room {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.my-room .table {
+  position: absolute;
+  background-image: url("../img/comp.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 647px;
+  height: 300px;
+  bottom: 0;
+  left: 20%;
+  z-index: 7;
+}
+
+.my-room .books {
+  position: absolute;
+  background-image: url("../img/books.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100px;
+  left: 90%;
+  top: 30%;
+}
+
+.my-room .window {
+  position: absolute;
+  top: 16%;
+  width: 220px;
+  height: 300px;
+  border: 10px solid #5D576B;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.my-room .window .sun {
+  position: absolute;
+  background-image: url("../img/sun.png");
+  width: 90px;
+  height: 90px;
+  z-index: 7;
+  top: 2%;
+  left: 2%;
+}
+
+.my-room .window .day {
+  background-image: url("../img/day.jpg");
+  width: 120%;
+  height: 130%;
+  position: absolute;
+  left: -10%;
+  top: 0;
 }
