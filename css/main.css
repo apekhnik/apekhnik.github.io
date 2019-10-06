@@ -242,8 +242,25 @@ header .plintus::after {
   font-family: 'Mansalva', cursive;
   font-size: 4vmin;
   cursor: pointer;
+  animation: btn-anim 3s infinite;
 }
 
 #faster:checked + .faster {
-  color: #f93;
+  color: #F7567C;
+}
+
+@keyframes btn-anim {
+	0%{
+		
+		transform: scale(1);
+	}
+	50%{
+		
+		
+		transform: scale(1.4);
+	}
+	100%{
+		transform: scale(1);
+	
+	}
 }

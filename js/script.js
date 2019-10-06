@@ -47,12 +47,21 @@ window.onload = () => {
     
     const faster = document.querySelector('#faster');
     
-    const update = () => {
-      const now = new Date();
     
+    
+    
+    
+    
+    
+    
+    
+    
+    const update = () => {
+      const fasterType = document.querySelector('.faster');
+      const now = new Date();
       const hours = faster.checked ? now.getMinutes() : now.getHours();
       const minutes = faster.checked ? now.getSeconds() : now.getMinutes();
-    
+        
       const hoursTwelves = Math.floor(hours % 12);
       const minuteTens = Math.floor(minutes / 10) + 6 * (hours % 2);
       const minuteOnes = minutes % 10;
@@ -60,6 +69,12 @@ window.onload = () => {
       updateRing(hourOnesRing, `rotate(${180 - 30 * hoursTwelves}deg)`);
       updateRing(minuteTensRing, `rotate(${180 - 30 * minuteTens}deg)`);
       updateRing(minuteOnesRing, `rotate(${180 - 36 * minuteOnes}deg)`);
+      if(faster.checked){
+       fasterType.textContent = "Slower!";
+        
+      }else{
+        fasterType.textContent = "Faster!";
+      }
     };
     
     update();
