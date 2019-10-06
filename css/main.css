@@ -26,7 +26,7 @@ header .plintus {
   background-image: url("../img/bgicons.png");
   background-size: contain;
   width: 100%;
-  height: 100px;
+  height: 150px;
   position: absolute;
   bottom: 0;
 }
@@ -109,7 +109,7 @@ header .plintus::after {
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .my-room .zakaz-block button:hover {
@@ -186,81 +186,22 @@ header .plintus::after {
   color: #FFFAE3;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  top: 16%;
-  left: 75%;
+  top: 20%;
+  left: 70%;
 }
 
 .my-room .contact-on-the-wall span {
   display: block;
+  margin-top: 7px;
 }
 
 .my-room .contact-on-the-wall .big-font {
-  font-size: 20px;
+  font-size: 25px;
+  margin-right: 7px;
 }
 
 .content {
   min-height: 200px;
   width: 100%;
   background-image: url("../img/bgcont.png");
-}
-#clock {
-  z-index: 1;
-  position: absolute;
-  border-radius: 50%;
-  left: -20%;
-  top: 10vmin;
-  width: 25vmin;
-  height: 25vmin;
-  background-color: #080808;
-  box-shadow: 0 0 10vmin 1vmin black;
-}
-
-#light {
-  z-index: -1;
-  position: absolute;
-  border-radius: 10%;
-  left: 1%;
-  top: 44%;
-  width: 30%;
-  height: 12%;
-  background: linear-gradient(#e70808, red, #e70808);
-  box-shadow: 0 0 6vmin 0 #e70808;
-}
-
-.ring {
-  transition: transform 0.5s;
-}
-
-#faster {
-  display: none;
-}
-
-.faster {
-  position: absolute;
-  left: -15%;
-  bottom: 2vmin;
-  font-family: 'Mansalva', cursive;
-  font-size: 4vmin;
-  cursor: pointer;
-  animation: btn-anim 3s infinite;
-}
-
-#faster:checked + .faster {
-  color: #F7567C;
-}
-
-@keyframes btn-anim {
-	0%{
-		
-		transform: scale(1);
-	}
-	50%{
-		
-		
-		transform: scale(1.4);
-	}
-	100%{
-		transform: scale(1);
-	
-	}
 }
