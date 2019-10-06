@@ -303,4 +303,10 @@ header .plintus::after {
   background-image: url("../img/bgcont.png");
   width: 100%;
   min-height: 100px;
+  color: #FFFAE3;
+}
+
+.message p {
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
 }
