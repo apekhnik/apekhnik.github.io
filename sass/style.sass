@@ -21,9 +21,11 @@ header
     display: flex
     padding-top: 15px
     justify-content: space-between
+    font-size: 20px
     .logo
         font-family: 'Exo 2', sans-serif
         color: #FFFAE3
+        font-size: 25px
         p
             display: inline-block
         span
@@ -52,19 +54,19 @@ header
             color: #FFFAE3
             background: #5D576B
             box-sizing: border-box
-            padding: 5px 20px
+            padding: 10px 20px
             border: transparent
             position: absolute
             top: 0
             left: 0
             transition:  all .3s linear
             border-radius: 5px
-            font-size: 16px
+            font-size: 19px
             &:hover
                 background: #F7567C
         span
             position: absolute
-            top: 30%
+            top: 45%
             font-weight: 400
             font-family: 'Exo 2', sans-serif
             font-size: 14px
@@ -107,6 +109,7 @@ header
             z-index: 7
             top: 2%
             left: 2%
+            animation: sun-anim 3s infinite
         .day
             background-image: url(../img/day.jpg)
             width: 120%
@@ -121,11 +124,12 @@ header
         box-sizing: border-box
         top: 20%
         left: 70%
+        font-size: 20px
         span
             display: block
             margin-top: 7px
         .big-font
-            font-size: 25px
+            font-size: 30px
             margin-right: 7px
 
 
@@ -136,3 +140,31 @@ header
     min-height: 200px
     width: 100%
     background-image: url(../img/bgcont.png)
+    position: relative
+    &::after
+            content: ''
+            background-image: url(../img/wawew.png) 
+            width: 100%
+            height: 20px
+            z-index: 59
+            position: absolute
+            bottom: -3px
+.advantages
+    font-family: 'Exo 2', sans-serif
+    color: #FFFAE3
+    padding-top: 40px
+    padding-bottom: 40px
+    h1
+        text-align: center
+        margin-bottom: 30px
+    &-list
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 40px
+        &__item 
+            display: flex
+            div
+                margin-right: 15px
+            h3   
+               margin-bottom: 10px
+               
