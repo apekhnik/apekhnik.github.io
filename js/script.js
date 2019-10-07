@@ -96,21 +96,25 @@ window.onload = () => {
         feImage.setAttribute('xlink:href', dataUri);
       });
     }
-    var message = document.querySelector('.message h2');
-    new TypeIt(message, {
-        speed: 50,
-        startDelay: 900,
-        waitUntilVisible:true
-      })
-      .type('The most versatile animated typing utility on the internte')
-      .pause(300)
-      .delete(2)
-      .pause(250)
-      .type('et')
-      .pause(750)
-      .delete(8)
-      .pause(750)
-      .type('<em>planet.</em>')
-      .go();
-
+   
+   
+        var message = document.querySelector('.message h2');
+        new TypeIt(message, {
+            speed: 150,
+            startDelay: 900,
+            waitUntilVisible:true,
+            deleteSpeed: null,
+            loop: true
+          })
+          .type('<НУЖЕН КРУТОЙ САЙТ?/>')
+          .pause(2000)
+          .delete(42)
+          .pause(750)
+          .type('< У ВАС ЕСТЬ ПРОБЛЕМА? В МОИХ В СИЛАХ ЕЁ РЕШИТЬ/>')
+          .pause(2000)
+          .delete(37)
+          .pause(750)
+          .type('<ИЩИТЕ РАЗРАБОТЧИКА?/>')
+          .go();
+      
 }
