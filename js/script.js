@@ -100,21 +100,22 @@ window.onload = () => {
    
         var message = document.querySelector('.message h2');
         new TypeIt(message, {
-            speed: 150,
+            speed: 50,
             startDelay: 900,
             waitUntilVisible:true,
             deleteSpeed: null,
             loop: true
           })
           .type('<НУЖЕН КРУТОЙ САЙТ?/>')
-          .pause(2000)
+          .pause(7000)
           .delete(42)
           .pause(750)
           .type('< У ВАС ЕСТЬ ПРОБЛЕМА? В МОИХ В СИЛАХ ЕЁ РЕШИТЬ/>')
-          .pause(2000)
-          .delete(37)
+          .pause(7000)
+          .delete(49)
           .pause(750)
           .type('<ИЩИТЕ РАЗРАБОТЧИКА?/>')
+          .pause(7000)
           .go();
       
 }
