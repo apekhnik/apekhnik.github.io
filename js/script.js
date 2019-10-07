@@ -99,7 +99,8 @@ window.onload = () => {
     var message = document.querySelector('.message h2');
     new TypeIt(message, {
         speed: 50,
-        startDelay: 900
+        startDelay: 900,
+        waitUntilVisible:true
       })
       .type('The most versatile animated typing utility on the internte')
       .pause(300)
@@ -107,7 +108,6 @@ window.onload = () => {
       .pause(250)
       .type('et')
       .pause(750)
-      .options({speed: 100, deleteSpeed: 75})
       .delete(8)
       .pause(750)
       .type('<em>planet.</em>')
