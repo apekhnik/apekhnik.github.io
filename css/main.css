@@ -435,7 +435,7 @@ header .plintus::after {
   background-image: url("../img/bgcont.png");
   width: 100%;
   min-height: 100px;
-  color: white;
+  color: #FFFAE3;
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
@@ -513,4 +513,52 @@ header .plintus::after {
   padding-left: 400px;
   background: url("../img/adaptive.png") no-repeat;
   background-size: contain;
+}
+
+.serv-list {
+  background-image: url("../img/bgcont.png");
+  width: 100%;
+  min-height: 100px;
+  color: #FFFAE3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.serv-list::after {
+  content: '';
+  background-image: url("../img/wawew.png");
+  width: 100%;
+  height: 20px;
+  z-index: 59;
+  position: absolute;
+  bottom: -3px;
+}
+
+.serv-list h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 400;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.serv-list p {
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.serv-list li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.serv-list__container {
+  display: flex;
+}
+
+.serv-list__container .serv-list__item {
+  width: 50%;
 }
