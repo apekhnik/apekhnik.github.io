@@ -14,6 +14,46 @@
 
 </head>
 <body>
+	<div class="modal-bg">
+			<div class="modal">
+				<h3>ВЫ ГОТОВЫ СДЕЛАТЬ ЗАКАЗ?</h3>
+				<div class="modal-container">
+						<div class="modal-container__item">
+							<label for="name">
+								<span>Представтесь пожалуйста<i class="red-dot">*</i></span>
+								<input type="text">
+							</label>
+						</div>
+						<div class="modal-container__item">
+							<label for="name">
+								<span>Ваш e0mail <i class="red-dot">*</i></span>
+								<input type="text">
+							</label>
+						</div>
+						<div class="modal-container__item">
+							<label for="name">
+								<span>Контактный телефон <i class="red-dot">*</i></span>
+								<input type="text">
+							</label>
+						</div>
+						<div class="modal-container__item">
+							<label for="name">
+								<span>Выберите услугу <i class="red-dot">*</i></span>
+								<input type="text">
+							</label>
+						</div>
+						
+				</div>
+				<div class="modal-area">
+				<span>Описание проекта, требования, конкуренты, особые пожелания, бюджет <i class="red-dot">*</i></span>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+				</div>
+				<button class="modal-send">ОТПРАВИТЬ</button>
+				<button class="exit-btn">
+				<i class="fas fa-times-circle"></i>
+				</button>
+			</div>
+		</div>
 	<header>
 		<div class="plintus"></div>
 		<div class="wrapper60">
@@ -49,7 +89,7 @@
 			</div>
 			<div class="my-room">
 				<div class="zakaz-block">
-					<button class="zakaz">ЗАКАЗАТЬ УСЛУГУ</button>
+					<button class="zakaz open-modal">ЗАКАЗАТЬ УСЛУГУ</button>
 					<span>Заполните форму заказа <br> и я свяжусь с Вами</span>
 				</div>
 				<div class="contact-on-the-wall">
@@ -162,46 +202,7 @@
 				  <label class="faster" for="faster">Faster!</label>
 			</div>
 		</div>
-		<div class="modal-bg">
-			<div class="modal">
-				<h3>ВЫ ГОТОВЫ СДЕЛАТЬ ЗАКАЗ?</h3>
-				<div class="modal-container">
-						<div class="modal-container__item">
-							<label for="name">
-								<span>Представтесь пожалуйста<i class="red-dot">*</i></span>
-								<input type="text">
-							</label>
-						</div>
-						<div class="modal-container__item">
-							<label for="name">
-								<span>Ваш e0mail <i class="red-dot">*</i></span>
-								<input type="text">
-							</label>
-						</div>
-						<div class="modal-container__item">
-							<label for="name">
-								<span>Контактный телефон <i class="red-dot">*</i></span>
-								<input type="text">
-							</label>
-						</div>
-						<div class="modal-container__item">
-							<label for="name">
-								<span>Выберите услугу <i class="red-dot">*</i></span>
-								<input type="text">
-							</label>
-						</div>
-						
-				</div>
-				<div class="modal-area">
-				<span>Описание проекта, требования, конкуренты, особые пожелания, бюджет <i class="red-dot">*</i></span>
-							<textarea name="" id="" cols="30" rows="10"></textarea>
-				</div>
-				<button class="modal-send">ОТПРАВИТЬ</button>
-				<button class="exit-btn">
-				<i class="fas fa-times-circle"></i>
-				</button>
-			</div>
-		</div>
+		
 	</header>
 	
 	<div class="content">
@@ -316,7 +317,7 @@
 						 указанным контактам в форме и мы
 						 детально обсудим техническое задание, сроки, 
 						условия оплаты и отвечу на все интересующие Вас вопросы </p>
-				<button>СВЯЗЬ СО МНОЙ</button>
+				<button class="modal-btn open-modal">СВЯЗЬ СО МНОЙ</button>
 		</div>
 	</section>
 	<section class="partners">

@@ -6,7 +6,8 @@
   justify-content: center;
   align-items: center;
   top: 0;
-  left: 20;
+  left: 0;
+  display: none;
 }
 
 .modal-bg::before {
@@ -136,6 +137,18 @@ textarea {
   color: red;
   margin-left: 10px;
   font-size: 20px;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex !important;
 }
 header {
   background: #99E1D9;

@@ -11,7 +11,7 @@ window.onload = () => {
          
             var speed = layer.getAttribute('data-speed');
             layer.style.transform = 'translateX('+ (event.clientX*speed)/1000 +'px)';
-            console.log(layer)
+            
             
        });
     }
@@ -118,4 +118,37 @@ window.onload = () => {
           .pause(7000)
           .go();
       
+
+
+
+
+
+
+
+
+
+          var zakaz = document.querySelector('.zakaz');
+          var exitBtn = document.querySelector('.exit-btn');
+
+          var modalLayout  = document.querySelector('.modal-bg');
+          var modalBtn = document.querySelectorAll('.open-modal');
+          modalBtn.forEach(function(item){
+              item.addEventListener('click', showModal);
+          });
+          // zakaz.addEventListener('click', showModal);
+          exitBtn.addEventListener('click', hideModal);
+         
+          
+          function showModal(event){
+            modalLayout.style.top = - document.querySelector('body').getBoundingClientRect().y + 'px';
+            modalLayout.style.display = "flex";
+            console.log(document.querySelector('body').getBoundingClientRect().y);
+            document.querySelector('body').style.overflow = 'hidden';
+            
+          }
+          function hideModal(){
+            modalLayout.style.display = "none";
+            
+            document.querySelector('body').style.overflow = ''
+          }
 }
