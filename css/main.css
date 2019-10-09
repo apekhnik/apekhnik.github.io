@@ -209,10 +209,21 @@ header .plintus::after {
 .header-top .menu div {
   margin-right: 20px;
   color: #FFFAE3;
+  transition: all .5s linear;
+}
+
+.header-top .menu div:hover {
+  color: #5d576b;
+  cursor: pointer;
 }
 
 .header-top .menu div a {
   color: #FFFAE3;
+  transition: all .7s linear;
+}
+
+.header-top .menu div a:hover {
+  color: #5d576b;
 }
 
 .my-room {
@@ -326,6 +337,12 @@ header .plintus::after {
 .my-room .contact-on-the-wall span {
   display: block;
   margin-top: 7px;
+  transition: all .5s linear;
+}
+
+.my-room .contact-on-the-wall span:hover {
+  color: #5d576b;
+  cursor: pointer;
 }
 
 .my-room .contact-on-the-wall .big-font {
@@ -462,7 +479,38 @@ header .plintus::after {
   padding: 5px;
 }
 
-.partners {
+.services {
   background: #FFFAE3;
   min-height: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #5d576b;
+  font-family: 'Exo 2', sans-serif;
+  line-height: 24px;
+  position: relative;
+}
+
+.services::after {
+  content: '';
+  background-image: url("../img/wawe.png");
+  width: 100%;
+  height: 20px;
+  z-index: 59;
+  position: absolute;
+  bottom: -3px;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.services p {
+  margin-bottom: 20px;
+}
+
+.services .p-img {
+  padding-left: 400px;
+  background: url("../img/adaptive.png") no-repeat;
+  background-size: contain;
 }
