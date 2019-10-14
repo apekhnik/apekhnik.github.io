@@ -598,7 +598,7 @@ header .plintus::after {
   margin-bottom: 15px;
 }
 
-footer {
+.footer {
   background-image: url("../img/bgcont.png");
   width: 100%;
   min-height: 100px;
@@ -609,7 +609,7 @@ footer {
   font-family: 'Exo 2', sans-serif;
 }
 
-footer h2 {
+.footer h2 {
   text-align: center;
   font-size: 35px;
 }
@@ -627,4 +627,40 @@ footer h2 {
 .footer-container__item h5 {
   font-size: 25px;
   font-weight: 400;
+}
+
+footer {
+  padding-top: 25px;
+  background: #2B3037;
+  padding-bottom: 15px;
+}
+
+footer .logo {
+  font-family: 'Exo 2', sans-serif;
+  color: #FFFAE3;
+  font-size: 25px;
+}
+
+footer .logo p {
+  display: inline-block;
+}
+
+footer .logo span {
+  font-size: 13px;
+  display: block;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-container a {
+  color: #FFFAE3;
+  margin-right: 10px;
+}
+
+.bottom-container .copyright {
+  color: #FFFAE3;
+  font-family: 'Exo 2', sans-serif;
 }
