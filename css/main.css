@@ -1,3 +1,68 @@
+@media screen and (max-width: 1780px) {
+  .my-room .table {
+    width: 574px !important;
+    left: 15% !important;
+  }
+
+  .my-room .contact-on-the-wall span {
+    font-size: 17px !important;
+  }
+
+  .my-room .window {
+    width: 150px !important;
+  }
+
+  .my-room .zakaz-block {
+    left: 37% !important;
+  }
+
+  .header-top .logo {
+    font-size: 20px !important;
+  }
+
+  .header-top .menu div a {
+    font-size: 20px !important;
+  }
+
+  .services .p-img {
+    padding-left: 0 !important;
+    background-image: none !important;
+  }
+
+  .footer h2 {
+    font-size: 20px !important;
+  }
+
+  .footer-container__item i {
+    font-size: 25px !important;
+  }
+
+  .footer-container__item h5 {
+    font-size: 15px !important;
+  }
+
+  .footer-container__item span {
+    font-size: 14px !important;
+  }
+
+  .bottom-container .logo {
+    font-family: 'Exo 2', sans-serif;
+    color: #FFFAE3;
+    font-size: 15px;
+  }
+
+  .bottom-container p {
+    font-size: 15px !important;
+  }
+
+  .bottom-container span {
+    font-size: 10px;
+  }
+
+  .bottom-container .social {
+    font-size: 1px !important;
+  }
+}
 .modal-bg {
   position: absolute;
   width: 100%;
@@ -105,6 +170,7 @@
 * {
   padding: 0;
   margin: 0;
+  transition: all .3s ease-in-out;
 }
 
 a {
@@ -191,7 +257,6 @@ header .plintus::after {
   display: flex;
   padding-top: 15px;
   justify-content: space-between;
-  font-size: 20px;
 }
 
 .header-top .logo {
@@ -228,6 +293,7 @@ header .plintus::after {
 .header-top .menu div a {
   color: #FFFAE3;
   transition: all .7s linear;
+  font-size: 25px;
 }
 
 .header-top .menu div a:hover {
@@ -635,24 +701,24 @@ footer {
   padding-bottom: 15px;
 }
 
-footer .logo {
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-container .logo {
   font-family: 'Exo 2', sans-serif;
   color: #FFFAE3;
   font-size: 25px;
 }
 
-footer .logo p {
+.bottom-container .logo p {
   display: inline-block;
 }
 
-footer .logo span {
+.bottom-container .logo span {
   font-size: 13px;
   display: block;
-}
-
-.bottom-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .bottom-container a {
