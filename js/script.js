@@ -221,6 +221,7 @@ window.onload = () => {
        {
         $(".hide-btn").on('click', function(){
           $(".hide-btn").toggleClass("btn-hide-active");
+          $(".mobile-menu").toggleClass('mobile-menu__open');
         });
        }
 }
