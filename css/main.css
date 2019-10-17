@@ -15,6 +15,10 @@
     padding-left: 0 !important;
     background: url("../img/adaptive.png") center top no-repeat !important;
   }
+
+  .advantages-list {
+    grid-template-columns: 1fr 1fr !important;
+  }
 }
 @media screen and (max-width: 1420px) {
   .wrapper60 {
@@ -37,6 +41,7 @@
   .my-room .table {
     width: 574px !important;
     left: 15% !important;
+    background-position: bottom !important;
   }
 
   .my-room .contact-on-the-wall span {
@@ -100,6 +105,58 @@
     font-size: 15px !important;
   }
 }
+@media screen and (max-width: 420px) {
+  .advantages-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .my-room .zakaz-block {
+    left: 25% !important;
+    top: 27% !important;
+  }
+
+  header .header-top .logo {
+    left: 25% !important;
+    font-size: 20px !important;
+  }
+
+  .modal-btn {
+    font-size: 15px !important;
+  }
+
+  .message h2 {
+    font-size: 25px !important;
+  }
+
+  .serv-list .serv-list__container {
+    flex-direction: column !important;
+  }
+
+  .serv-list .serv-list__container .serv-list__item {
+    width: 100% !important;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .bottom-container {
+    flex-direction: column !important;
+  }
+}
+@media screen and (max-width: 696px) {
+  .contact-on-the-wall {
+    display: none !important;
+  }
+
+  .my-room .table {
+    width: 374px !important;
+  }
+
+  .advantages-list {
+    grid-gap: 5px !important;
+  }
+}
 @media screen and (max-width: 960px) {
   .header-top .logo {
     font-size: 14px !important;
@@ -141,6 +198,7 @@
     padding-top: 40% !important;
     padding-right: 0 !important;
     background: url("../img/webdev.png") top no-repeat !important;
+    background-size: 60% !important;
   }
 
   .services .p-img {
@@ -157,11 +215,19 @@
   .header-top .logo {
     position: absolute !important;
     top: 15% !important;
-    left: 40%;
+    left: 40% !important;
   }
 
   .modal-btn {
     width: 45% !important;
+  }
+
+  .wrapper60 {
+    width: 95% !important;
+  }
+
+  .menu {
+    display: none !important;
   }
 }
 .modal-bg {
@@ -337,6 +403,7 @@ textarea {
   background: #FFFAE3;
   border-radius: 50%;
   border: none;
+  border-z-index: 59;
 }
 
 .hide-btn:hover {
@@ -431,6 +498,7 @@ header .plintus::after {
   padding-top: 50px;
   box-sizing: border-box;
   display: none;
+  z-index: 69;
 }
 
 .mobile-menu a {
