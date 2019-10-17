@@ -159,6 +159,10 @@
     top: 15% !important;
     left: 40%;
   }
+
+  .modal-btn {
+    width: 45% !important;
+  }
 }
 .modal-bg {
   position: absolute;
@@ -417,7 +421,7 @@ header .plintus::after {
 
 .mobile-menu {
   width: 100%;
-  background: #000;
+  background: #99E1D9;
   position: absolute;
   top: 0;
   left: 0;
@@ -427,6 +431,11 @@ header .plintus::after {
   padding-top: 50px;
   box-sizing: border-box;
   display: none;
+}
+
+.mobile-menu a {
+  display: block;
+  margin-left: 45%;
 }
 
 .mobile-menu__open {
