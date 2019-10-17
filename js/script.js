@@ -216,4 +216,11 @@ window.onload = () => {
               ]
             });
           }
+
+
+       {
+        $(".hide-btn").on('click', function(){
+          $(".hide-btn").toggleClass("btn-hide-active");
+        });
+       }
 }
