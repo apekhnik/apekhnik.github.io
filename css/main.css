@@ -539,6 +539,11 @@ header .plintus::after {
   margin-top: 5px;
 }
 
+.mobile-menu a:hover {
+  cursor: poiner;
+  color: black;
+}
+
 .mobile-menu__open {
   height: 180px;
 }
