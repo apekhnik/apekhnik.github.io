@@ -369,6 +369,10 @@
   transition: all .3s ease-in-out;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
