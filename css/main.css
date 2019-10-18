@@ -19,6 +19,10 @@
   .advantages-list {
     grid-template-columns: 1fr 1fr !important;
   }
+
+  .modal {
+    width: 60% !important;
+  }
 }
 @media screen and (max-width: 1420px) {
   .wrapper60 {
@@ -152,6 +156,10 @@
   .bottom-container .social {
     margin-bottom: 15px !important;
   }
+
+  .wrapper60 .my-room .table {
+    width: 324px !important;
+  }
 }
 @media screen and (max-width: 696px) {
   .contact-on-the-wall {
@@ -164,6 +172,18 @@
 
   .advantages-list {
     grid-gap: 5px !important;
+  }
+
+  .modal-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .modal-send {
+    width: 70% !important;
+  }
+
+  .table {
+    left: 0% !important;
   }
 }
 @media screen and (max-width: 960px) {
@@ -188,7 +208,7 @@
   }
 
   header .my-room .table {
-    left: 0% !important;
+    left: 10% !important;
   }
 
   .big-font {
@@ -405,7 +425,7 @@ textarea {
 .hide-btn {
   position: absolute;
   top: 0;
-  left: 47%;
+  left: 45%;
   display: block;
   width: 50px;
   height: 50px;
@@ -512,11 +532,15 @@ header .plintus::after {
 
 .mobile-menu a {
   display: block;
-  margin-left: 45%;
+  margin-left: 40%;
+  font-family: 'Exo 2', sans-serif;
+  color: #FFFAE3;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .mobile-menu__open {
-  height: 150px;
+  height: 180px;
 }
 
 .header-top {
