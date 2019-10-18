@@ -21,7 +21,7 @@
   }
 
   .modal {
-    width: 60% !important;
+    width: 80% !important;
   }
 }
 @media screen and (max-width: 1420px) {
@@ -532,11 +532,14 @@ header .plintus::after {
 
 .mobile-menu a {
   display: block;
-  margin-left: 40%;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 3px;
   font-family: 'Exo 2', sans-serif;
   color: #FFFAE3;
   margin-bottom: 5px;
   margin-top: 5px;
+  border-bottom: 1px solid #5d576b;
 }
 
 .mobile-menu a:hover {
@@ -545,7 +548,9 @@ header .plintus::after {
 }
 
 .mobile-menu__open {
-  height: 180px;
+  height: 190px;
+  border-bottom: 1px solid #5d576b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .header-top {
