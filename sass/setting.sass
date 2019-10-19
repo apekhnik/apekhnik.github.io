@@ -4,6 +4,8 @@
     transition: all .3s ease-in-out
 body
    overflow-x: hidden
+html
+    overflow-x: hidden
 a
     text-decoration: none
 .wrapper60
@@ -37,11 +39,11 @@ input, textarea
 .hide-btn 
 	position: absolute
 	top: 0
-	left: 45%
+	left: 5%
 	display: block
 	width: 50px
 	height: 50px
-	background: #FFFAE3
+	background: none
 	border-radius: 50%
 	border: none
     z-index: 59
@@ -53,14 +55,14 @@ input, textarea
         width: 25px
         height: 2px
         margin-left: 12.5px
-        background: #5D576B
+        background: #FFFAE3
         &::before
             content: ''
             position: absolute
             display: block
             width: 25px
             height: 2px
-            background: #5D576B 
+            background: #FFFAE3
             transform: translateY(5px)
             transition: 0.4s
 .hide-btn 
@@ -71,7 +73,7 @@ input, textarea
             display: block
             width: 25px
             height: 2px
-            background: #5D576B 
+            background: #FFFAE3 
             transform: translateY(-5px)
             transition: 0.4s
 .btn-hide-active

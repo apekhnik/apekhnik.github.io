@@ -159,6 +159,7 @@
 
   .wrapper60 .my-room .table {
     width: 324px !important;
+    left: 0 !important;
   }
 }
 @media screen and (max-width: 696px) {
@@ -373,6 +374,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -429,11 +434,11 @@ textarea {
 .hide-btn {
   position: absolute;
   top: 0;
-  left: 45%;
+  left: 5%;
   display: block;
   width: 50px;
   height: 50px;
-  background: #FFFAE3;
+  background: none;
   border-radius: 50%;
   border: none;
   border-z-index: 59;
@@ -448,7 +453,7 @@ textarea {
   width: 25px;
   height: 2px;
   margin-left: 12.5px;
-  background: #5D576B;
+  background: #FFFAE3;
 }
 
 .hide-btn span::before {
@@ -457,7 +462,7 @@ textarea {
   display: block;
   width: 25px;
   height: 2px;
-  background: #5D576B;
+  background: #FFFAE3;
   transform: translateY(5px);
   transition: 0.4s;
 }
@@ -468,7 +473,7 @@ textarea {
   display: block;
   width: 25px;
   height: 2px;
-  background: #5D576B;
+  background: #FFFAE3;
   transform: translateY(-5px);
   transition: 0.4s;
 }
@@ -521,7 +526,7 @@ header .plintus::after {
 
 .mobile-menu {
   width: 100%;
-  background: #99E1D9;
+  background-image: url("../img/bgcont.png");
   position: absolute;
   top: 0;
   left: 0;
