@@ -23,6 +23,19 @@
   .modal {
     width: 80% !important;
   }
+
+  .mockup {
+    width: 807px !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    margin: 0 auto !important;
+  }
+
+  .mockup .port-item {
+    margin-left: 72px !important;
+    margin-top: 50px !important;
+    height: 390px !important;
+  }
 }
 @media screen and (max-width: 1420px) {
   .wrapper60 {
@@ -1067,14 +1080,15 @@ footer {
 
 .mockup {
   background-image: url("../img/computer.png");
-  width: 100%;
+  background-size: cover;
+  width: 1107px;
   height: 820px;
   overflow: hidden;
 }
 
 .mockup .port-item {
   overflow-y: scroll;
-  width: 80%;
+  width: 81%;
   height: 520px;
   margin-left: 90px;
   margin-top: 70px;
