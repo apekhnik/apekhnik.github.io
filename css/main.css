@@ -252,7 +252,7 @@
 @media screen and (max-width: 960px) {
   .header-top .logo {
     font-size: 14px !important;
-    z-index: 100 !important;
+    z-index: 50 !important;
   }
 
   .header-top .menu div a {
@@ -431,6 +431,14 @@
   padding: 0;
   margin: 0;
   transition: all .3s ease-in-out;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 a {
