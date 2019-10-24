@@ -161,8 +161,8 @@ window.onload = () => {
          
          
          function showModal(event){
-            modalLayout.style.top = - document.querySelector('body').getBoundingClientRect().y + 'px';
-            // modalLayout.style.display = "flex";
+            // modalLayout.style.top = - document.querySelector('body').getBoundingClientRect().y + 'px';
+            modalLayout.style.display = "flex";
             modalLayout.style.opacity = '1';
             modalLayout.querySelector('.modal').style.opacity = '1';
             console.log(modalLayout.querySelector('.modal').style.opacity);
@@ -170,7 +170,7 @@ window.onload = () => {
             
           }
           function hideModal(event){
-            // modalLayout.style.display = "none";
+            modalLayout.style.display = "none";
             modalLayout.style.opacity = '0';
             modalLayout.querySelector('.modal').style.opacity = '0';
             document.querySelector('body').style.overflow = '';
