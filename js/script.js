@@ -176,47 +176,74 @@ window.onload = () => {
             document.querySelector('body').style.overflow = '';
           }
 
-          {
-            //slider setup
-            $('.portfolio-container').slick({
-              dots: true,
-              infinite: true,
-              speed: 300,
-              slidesToShow: 3,
-              autoplay: true,
-              autoplaySpeed: 4000,
-              slidesToScroll: 4,
-              responsive: [
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                  }
-                },
-                {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                  }
-                },
-                {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
+          // {
+          //   //slider setup
+          //   $('.portfolio-container').slick({
+          //     dots: true,
+          //     infinite: true,
+          //     speed: 300,
+          //     slidesToShow: 2,
+          //     autoplay: true,
+          //     autoplaySpeed: 4000,
+          //     slidesToScroll: 4,
+          //     responsive: [
+          //       {
+          //         breakpoint: 1024,
+          //         settings: {
+          //           slidesToShow: 3,
+          //           slidesToScroll: 3,
+          //           infinite: true,
+          //           dots: true
+          //         }
+          //       },
+          //       {
+          //         breakpoint: 600,
+          //         settings: {
+          //           slidesToShow: 2,
+          //           slidesToScroll: 2
+          //         }
+          //       },
+          //       {
+          //         breakpoint: 480,
+          //         settings: {
+          //           slidesToShow: 1,
+          //           slidesToScroll: 1
+          //         }
+          //       }
+          //       // You can unslick at a given breakpoint now by adding:
+          //       // settings: "unslick"
+          //       // instead of a settings object
+          //     ]
+          //   });
+          // }
+          $('.portfolio-container').slick({
+            centerMode: true,
+            centerPadding: '160px',
+            slidesToShow: 2,
+            arrows: true,
+            autoplay: true,
+            infinite: true,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 2
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-              ]
-            });
-          }
-
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
 
        {
         $(".hide-btn").on('click', function(){
