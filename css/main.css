@@ -1153,3 +1153,24 @@ footer {
   width: 100%;
   height: auto;
 }
+
+.description-work {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Exo 2', sans-serif;
+  color: #2B3037;
+}
+
+.description-work div {
+  margin-bottom: 15px;
+}
+
+.description-work__tech h3 {
+  margin-bottom: 10px;
+}
+
+.description-work__tech ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
