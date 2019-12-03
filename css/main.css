@@ -1120,7 +1120,7 @@ footer {
 }
 
 .mockup {
-  background-image: url("../img/computer.png");
+  background-image: url("../img/Computer.png");
   background-size: cover;
   width: 1107px;
   height: 820px;
@@ -1173,4 +1173,5 @@ footer {
 .description-work__tech ul li {
   list-style: none;
   margin-bottom: 5px;
+  color: red;
 }
