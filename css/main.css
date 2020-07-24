@@ -466,6 +466,15 @@ button {
   font-size: 40px;
 }
 
+.firstword {
+  font-size: 25px;
+  color: #FFFAE3 !important;
+}
+
+.firstword:hover {
+  color: white !important;
+}
+
 .imdev {
   background: url("../img/webdev.png") right top no-repeat;
   padding-right: 50%;
@@ -671,7 +680,7 @@ header .plintus::after {
 .header-top .menu div a {
   color: #FFFAE3;
   transition: all .2s linear;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .header-top .menu div a:hover {
@@ -790,6 +799,7 @@ header .plintus::after {
   display: block;
   margin-top: 7px;
   transition: all .2s linear;
+  text-transform: uppercase;
 }
 
 .my-room .contact-on-the-wall span:hover {
@@ -829,6 +839,7 @@ header .plintus::after {
 .advantages h1 {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 35px;
 }
 
 .advantages-list {
@@ -847,6 +858,11 @@ header .plintus::after {
 
 .advantages-list__item h3 {
   margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.advantages-list__item p {
+  font-style: italic;
 }
 
 .about {
@@ -979,6 +995,21 @@ header .plintus::after {
   font-family: 'Exo 2', sans-serif;
 }
 
+.serv-list__item {
+  display: flex;
+  margin-right: 10px;
+}
+
+.serv-list__item span {
+  font-style: italic;
+  color: #c0392b;
+}
+
+.serv-list__item span:hover {
+  color: #e74c3c;
+  cursor: pointer;
+}
+
 .serv-list::after {
   content: '';
   background-image: url("../img/wawew.png");
@@ -991,10 +1022,15 @@ header .plintus::after {
 
 .serv-list h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-size: 30px;
   font-weight: 400;
   font-family: 'Exo 2', sans-serif;
+}
+
+.serv-list h4 {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .serv-list p {
@@ -1050,6 +1086,10 @@ header .plintus::after {
 
 .portfolio-container a:visited {
   color: #2B3037;
+}
+
+.portfolio-container__item:hover {
+  transform: scale(1.1);
 }
 
 .footer {
